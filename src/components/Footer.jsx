@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 // Date importing 
 const year = new Date();
@@ -8,9 +8,11 @@ const thisyear = year.getFullYear();
 
 const Footer = (props) => {
   return (
-    <div className={`${props.isOpen? 'w-[85%]':'w-[94%]' } fixed bottom-0 justify-center items-center`}>
+    <div className={`${props.isOpen ? 'w-[87%]' : 'w-[94%]'} duration-300 fixed bottom-0 justify-center items-center`}>
       <footer className="p-10 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
-        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {thisyear} <Link to='/' className="hover:underline">College Explorer™ </Link> All Rights Reserved.
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {thisyear}
+          <Link to='/home' className="hover:underline">College Explorer™ </Link>
+          All Rights Reserved.
         </span>
         <div className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
           <div>
